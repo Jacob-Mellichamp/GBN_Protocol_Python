@@ -1,0 +1,419 @@
+-----  Sliding Window Network Simulator Version -------- 
+
+EventEntity.A: Received from Layer 5: aaaaaaaaaa
+EventEntity.A: Sending to Layer 3: [SEQ: 1, ACK: 0, ACK_FLAG: False, CKSUM: 3864, LEN: 10, PAYLOAD: aaaaaaaaaa]
+EventEntity.A: Starting Timer
+EventEntity.A: Received from Layer 5: bbbbbbbbbb
+EventEntity.A: Sending to Layer 3: [SEQ: 2, ACK: 0, ACK_FLAG: False, CKSUM: 2578, LEN: 10, PAYLOAD: bbbbbbbbbb]
+EventEntity.B: Received from Layer 3: [SEQ: 2, ACK: 0, ACK_FLAG: False, CKSUM: 2578, LEN: 10, PAYLOAD: bbbbbbbbbb]
+:	 has received the message: bbbbbbbbbb
+:	 message SEQ#: 2
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 0, ACK_FLAG: True, CKSUM: 65279, LEN: 0]
+EventEntity.B: Received from Layer 5: cccccccccc
+EventEntity.B: Sending to Layer 3: [SEQ: 1, ACK: 0, ACK_FLAG: False, CKSUM: 1294, LEN: 10, PAYLOAD: cccccccccc]
+EventEntity.B: Starting Timer
+EventEntity.B: Received from Layer 3: [SEQ: 1, ACK: 0, ACK_FLAG: False, CKSUM: 3864, LEN: 10, PAYLOAD: aaaaaaaaaa]
+:	 has received the message: aaaaaaaaaa
+:	 message SEQ#: 1
+EventEntity.B: Sending to layer 5: aaaaaaaaaa
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 1, ACK_FLAG: True, CKSUM: 65278, LEN: 0]
+EventEntity.A: Received from Layer 5: dddddddddd
+EventEntity.A: Sending to Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 7, LEN: 10, PAYLOAD: dddddddddd]
+EventEntity.A: Received from Layer 5: eeeeeeeeee
+EventEntity.A: Sending to Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 64256, LEN: 10, PAYLOAD: eeeeeeeeee]
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 1, ACK_FLAG: True, CKSUM: 65278, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 1
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.A: Starting Timer
+EventEntity.B: Received from Layer 5: ffffffffff
+EventEntity.B: Sending to Layer 3: [SEQ: 2, ACK: 0, ACK_FLAG: False, CKSUM: 62973, LEN: 10, PAYLOAD: ffffffffff]
+EventEntity.A: Received from Layer 5: gggggggggg
+EventEntity.A: Sending to Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 61685, LEN: 10, PAYLOAD: gggggggggg]
+EventEntity.A: Received from Layer 3: [SEQ: 1, ACK: 0, ACK_FLAG: False, CKSUM: 1294, LEN: 10, PAYLOAD: cccccccccc]
+:	 has received the message: cccccccccc
+:	 message SEQ#: 1
+EventEntity.A: Sending to layer 5: cccccccccc
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 1, ACK_FLAG: True, CKSUM: 65278, LEN: 0]
+EventEntity.B: Received from Layer 5: hhhhhhhhhh
+EventEntity.B: Sending to Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 60402, LEN: 10, PAYLOAD: hhhhhhhhhh]
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 0, ACK_FLAG: True, CKSUM: 65279, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 0
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Received from Layer 5: iiiiiiiiii
+EventEntity.B: Sending to Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 59116, LEN: 10, PAYLOAD: iiiiiiiiii]
+EventEntity.B: Received from Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 7, LEN: 10, PAYLOAD: dddddddddd]
+:	 has received the message: dddddddddd
+:	 message SEQ#: 3
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 1, ACK_FLAG: True, CKSUM: 65278, LEN: 0]
+EventEntity.B: Received from Layer 5: jjjjjjjjjj
+EventEntity.B: Received from Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 64256, LEN: 10, PAYLOAD: eeeeeeeeee]
+:	 has received the message: eeeeeeeeee
+:	 message SEQ#: 4
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 1, ACK_FLAG: True, CKSUM: 65278, LEN: 0]
+EventEntity.B: Received from Layer 5: kkkkkkkkkk
+EventEntity.B: Received from Layer 5: llllllllll
+EventEntity.A: Received from Layer 5: mmmmmmmmmm
+EventEntity.A: Received from Layer 3: [SEQ: 2, ACK: 0, ACK_FLAG: False, CKSUM: 62973, LEN: 10, PAYLOAD: ffffffffff]
+:	 has received the message: ffffffffff
+:	 message SEQ#: 2
+EventEntity.A: Sending to layer 5: ffffffffff
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 2, ACK_FLAG: True, CKSUM: 65277, LEN: 0]
+EventEntity.A: Received from Layer 5: nnnnnnnnnn
+EventEntity.B: Timer Interrupt
+EventEntity.B: Starting Timer
+EventEntity.B: Sending to Layer 3: [SEQ: 1, ACK: 0, ACK_FLAG: False, CKSUM: 1294, LEN: 10, PAYLOAD: cccccccccc]
+EventEntity.B: Sending to Layer 3: [SEQ: 2, ACK: 0, ACK_FLAG: False, CKSUM: 62973, LEN: 10, PAYLOAD: ffffffffff]
+EventEntity.B: Sending to Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 60402, LEN: 10, PAYLOAD: hhhhhhhhhh]
+EventEntity.B: Sending to Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 59116, LEN: 10, PAYLOAD: iiiiiiiiii]
+EventEntity.A: Timer Interrupt
+EventEntity.A: Starting Timer
+EventEntity.A: Sending to Layer 3: [SEQ: 2, ACK: 0, ACK_FLAG: False, CKSUM: 2578, LEN: 10, PAYLOAD: bbbbbbbbbb]
+EventEntity.A: Sending to Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 7, LEN: 10, PAYLOAD: dddddddddd]
+EventEntity.A: Sending to Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 64256, LEN: 10, PAYLOAD: eeeeeeeeee]
+EventEntity.A: Sending to Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 61685, LEN: 10, PAYLOAD: gggggggggg]
+EventEntity.A: Received from Layer 5: oooooooooo
+EventEntity.B: Received from Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 61685, LEN: 10, PAYLOAD: gggggggggg]
+:	 has received the message: gggggggggg
+:	 message SEQ#: 5
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 1, ACK_FLAG: True, CKSUM: 65278, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 1, ACK_FLAG: True, CKSUM: 65278, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 1
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.B: Starting Timer
+:	 SEND NEW MESSAGE: jjjjjjjjjj
+EventEntity.B: Sending to Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 57830, LEN: 10, PAYLOAD: jjjjjjjjjj]
+EventEntity.B: Starting Timer
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 1, ACK_FLAG: True, CKSUM: 65278, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 1
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 1, ACK_FLAG: True, CKSUM: 65278, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 1
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 59116, LEN: 10, PAYLOAD: iiiiiiiiii]
+:	 has received the message: iiiiiiiiii
+:	 message SEQ#: 4
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 2, ACK_FLAG: True, CKSUM: 65277, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 60402, LEN: 10, PAYLOAD: hhhhhhhhhh]
+:	 has received the message: hhhhhhhhhh
+:	 message SEQ#: 3
+EventEntity.A: Sending to layer 5: hhhhhhhhhh
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 3, ACK_FLAG: True, CKSUM: 65276, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 2, ACK_FLAG: True, CKSUM: 65277, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 2
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.B: Starting Timer
+:	 SEND NEW MESSAGE: kkkkkkkkkk
+EventEntity.B: Sending to Layer 3: [SEQ: 6, ACK: 0, ACK_FLAG: False, CKSUM: 56544, LEN: 10, PAYLOAD: kkkkkkkkkk]
+EventEntity.B: Starting Timer
+EventEntity.A: Received from Layer 3: [SEQ: 2, ACK: 0, ACK_FLAG: False, CKSUM: 62973, LEN: 10, PAYLOAD: ffffffffff]
+:	 has received the message: ffffffffff
+:	 message SEQ#: 2
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 3, ACK_FLAG: True, CKSUM: 65276, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 60402, LEN: 10, PAYLOAD: hhhhhhhhhh]
+:	 has received the message: hhhhhhhhhh
+:	 message SEQ#: 3
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 3, ACK_FLAG: True, CKSUM: 65276, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 59116, LEN: 10, PAYLOAD: iiiiiiiiii]
+:	 has received the message: iiiiiiiiii
+:	 message SEQ#: 4
+EventEntity.A: Sending to layer 5: iiiiiiiiii
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 4, ACK_FLAG: True, CKSUM: 65275, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 1, ACK: 0, ACK_FLAG: False, CKSUM: 1294, LEN: 10, PAYLOAD: cccccccccc]
+:	 has received the message: cccccccccc
+:	 message SEQ#: 1
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 4, ACK_FLAG: True, CKSUM: 65275, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 7, LEN: 10, PAYLOAD: dddddddddd]
+:	 has received the message: dddddddddd
+:	 message SEQ#: 3
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 1, ACK_FLAG: True, CKSUM: 65278, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 2, ACK: 0, ACK_FLAG: False, CKSUM: 2578, LEN: 10, PAYLOAD: bbbbbbbbbb]
+:	 has received the message: bbbbbbbbbb
+:	 message SEQ#: 2
+EventEntity.B: Sending to layer 5: bbbbbbbbbb
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 2, ACK_FLAG: True, CKSUM: 65277, LEN: 0]
+EventEntity.A: Timer Interrupt
+EventEntity.A: Starting Timer
+EventEntity.A: Sending to Layer 3: [SEQ: 2, ACK: 0, ACK_FLAG: False, CKSUM: 2578, LEN: 10, PAYLOAD: bbbbbbbbbb]
+EventEntity.A: Sending to Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 7, LEN: 10, PAYLOAD: dddddddddd]
+EventEntity.A: Sending to Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 64256, LEN: 10, PAYLOAD: eeeeeeeeee]
+EventEntity.A: Sending to Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 61685, LEN: 10, PAYLOAD: gggggggggg]
+EventEntity.B: Received from Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 64256, LEN: 10, PAYLOAD: eeeeeeeeee]
+:	 has received the message: eeeeeeeeee
+:	 message SEQ#: 4
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 2, ACK_FLAG: True, CKSUM: 65277, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 61685, LEN: 10, PAYLOAD: gggggggggg]
+:	 has received the message: gggggggggg
+:	 message SEQ#: 5
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 2, ACK_FLAG: True, CKSUM: 65277, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 1, ACK_FLAG: True, CKSUM: 65278, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 1
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 57830, LEN: 10, PAYLOAD: jjjjjjjjjj]
+:	 has received the message: jjjjjjjjjj
+:	 message SEQ#: 5
+EventEntity.A: Sending to layer 5: jjjjjjjjjj
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 5, ACK_FLAG: True, CKSUM: 65274, LEN: 0]
+EventEntity.B: Timer Interrupt
+EventEntity.B: Starting Timer
+EventEntity.B: Sending to Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 60402, LEN: 10, PAYLOAD: hhhhhhhhhh]
+EventEntity.B: Sending to Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 59116, LEN: 10, PAYLOAD: iiiiiiiiii]
+EventEntity.B: Sending to Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 57830, LEN: 10, PAYLOAD: jjjjjjjjjj]
+EventEntity.B: Sending to Layer 3: [SEQ: 6, ACK: 0, ACK_FLAG: False, CKSUM: 56544, LEN: 10, PAYLOAD: kkkkkkkkkk]
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 3, ACK_FLAG: True, CKSUM: 65276, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 3
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.B: Starting Timer
+:	 SEND NEW MESSAGE: llllllllll
+EventEntity.B: Sending to Layer 3: [SEQ: 7, ACK: 0, ACK_FLAG: False, CKSUM: 55258, LEN: 10, PAYLOAD: llllllllll]
+EventEntity.B: Starting Timer
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 2, ACK_FLAG: True, CKSUM: 65277, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 2
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 6, ACK: 0, ACK_FLAG: False, CKSUM: 56544, LEN: 10, PAYLOAD: kkkkkkkkkk]
+:	 has received the message: kkkkkkkkkk
+:	 message SEQ#: 6
+EventEntity.A: Sending to layer 5: kkkkkkkkkk
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 3, ACK_FLAG: True, CKSUM: 65276, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 3
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 4, ACK_FLAG: True, CKSUM: 65275, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 4
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.B: Starting Timer
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 4, ACK_FLAG: True, CKSUM: 65275, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 4
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Timer Interrupt
+EventEntity.A: Starting Timer
+EventEntity.A: Sending to Layer 3: [SEQ: 2, ACK: 0, ACK_FLAG: False, CKSUM: 2578, LEN: 10, PAYLOAD: bbbbbbbbbb]
+EventEntity.A: Sending to Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 7, LEN: 10, PAYLOAD: dddddddddd]
+EventEntity.A: Sending to Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 64256, LEN: 10, PAYLOAD: eeeeeeeeee]
+EventEntity.A: Sending to Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 61685, LEN: 10, PAYLOAD: gggggggggg]
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 3, ACK_FLAG: True, CKSUM: 65276, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 3
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 2, ACK_FLAG: True, CKSUM: 65277, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 2
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.A: Starting Timer
+:	 SEND NEW MESSAGE: mmmmmmmmmm
+EventEntity.A: Sending to Layer 3: [SEQ: 6, ACK: 0, ACK_FLAG: False, CKSUM: 53974, LEN: 10, PAYLOAD: mmmmmmmmmm]
+EventEntity.A: Starting Timer
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 1, ACK_FLAG: True, CKSUM: 65278, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 1
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Received from Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 7, LEN: 10, PAYLOAD: dddddddddd]
+:	 has received the message: dddddddddd
+:	 message SEQ#: 3
+EventEntity.B: Sending to layer 5: dddddddddd
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 3, ACK_FLAG: True, CKSUM: 65276, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 61685, LEN: 10, PAYLOAD: gggggggggg]
+:	 has received the message: gggggggggg
+:	 message SEQ#: 5
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 3, ACK_FLAG: True, CKSUM: 65276, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 2, ACK: 0, ACK_FLAG: False, CKSUM: 2578, LEN: 10, PAYLOAD: bbbbbbbbbb]
+:	 has received the message: bbbbbbbbbb
+:	 message SEQ#: 2
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 3, ACK_FLAG: True, CKSUM: 65276, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 64256, LEN: 10, PAYLOAD: eeeeeeeeee]
+:	 has received the message: eeeeeeeeee
+:	 message SEQ#: 4
+EventEntity.B: Sending to layer 5: eeeeeeeeee
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 4, ACK_FLAG: True, CKSUM: 65275, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 2, ACK_FLAG: True, CKSUM: 65277, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 2
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 2, ACK_FLAG: True, CKSUM: 65277, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 2
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Timer Interrupt
+EventEntity.B: Starting Timer
+EventEntity.B: Sending to Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 57830, LEN: 10, PAYLOAD: jjjjjjjjjj]
+EventEntity.B: Sending to Layer 3: [SEQ: 6, ACK: 0, ACK_FLAG: False, CKSUM: 56544, LEN: 10, PAYLOAD: kkkkkkkkkk]
+EventEntity.B: Sending to Layer 3: [SEQ: 7, ACK: 0, ACK_FLAG: False, CKSUM: 55258, LEN: 10, PAYLOAD: llllllllll]
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 5, ACK_FLAG: True, CKSUM: 65274, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 5
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.B: Starting Timer
+EventEntity.A: Timer Interrupt
+EventEntity.A: Starting Timer
+EventEntity.A: Sending to Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 7, LEN: 10, PAYLOAD: dddddddddd]
+EventEntity.A: Sending to Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 64256, LEN: 10, PAYLOAD: eeeeeeeeee]
+EventEntity.A: Sending to Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 61685, LEN: 10, PAYLOAD: gggggggggg]
+EventEntity.A: Sending to Layer 3: [SEQ: 6, ACK: 0, ACK_FLAG: False, CKSUM: 53974, LEN: 10, PAYLOAD: mmmmmmmmmm]
+EventEntity.A: Received from Layer 3: [SEQ: 6, ACK: 0, ACK_FLAG: False, CKSUM: 56544, LEN: 10, PAYLOAD: kkkkkkkkkk]
+:	 has received the message: kkkkkkkkkk
+:	 message SEQ#: 6
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 7, ACK: 0, ACK_FLAG: False, CKSUM: 55258, LEN: 10, PAYLOAD: llllllllll]
+:	 has received the message: llllllllll
+:	 message SEQ#: 7
+EventEntity.A: Sending to layer 5: llllllllll
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 57830, LEN: 10, PAYLOAD: jjjjjjjjjj]
+:	 has received the message: jjjjjjjjjj
+:	 message SEQ#: 5
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 60402, LEN: 10, PAYLOAD: hhhhhhhhhh]
+:	 has received the message: hhhhhhhhhh
+:	 message SEQ#: 3
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 59116, LEN: 10, PAYLOAD: iiiiiiiiii]
+:	 has received the message: iiiiiiiiii
+:	 message SEQ#: 4
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 61685, LEN: 10, PAYLOAD: gggggggggg]
+:	 has received the message: gggggggggg
+:	 message SEQ#: 5
+EventEntity.B: Sending to layer 5: gggggggggg
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 5, ACK_FLAG: True, CKSUM: 65274, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 64256, LEN: 10, PAYLOAD: eeeeeeeeee]
+:	 has received the message: eeeeeeeeee
+:	 message SEQ#: 4
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 5, ACK_FLAG: True, CKSUM: 65274, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 6, ACK: 0, ACK_FLAG: False, CKSUM: 53974, LEN: 10, PAYLOAD: mmmmmmmmmm]
+:	 has received the message: mmmmmmmmmm
+:	 message SEQ#: 6
+EventEntity.B: Sending to layer 5: mmmmmmmmmm
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 2, ACK: 0, ACK_FLAG: False, CKSUM: 2578, LEN: 10, PAYLOAD: bbbbbbbbbb]
+:	 has received the message: bbbbbbbbbb
+:	 message SEQ#: 2
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 6
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.B: Starting Timer
+EventEntity.B: Received from Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 7, LEN: 10, PAYLOAD: dddddddddd]
+:	 has received the message: dddddddddd
+:	 message SEQ#: 3
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 4, ACK_FLAG: True, CKSUM: 65275, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 4
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.A: Starting Timer
+:	 SEND NEW MESSAGE: nnnnnnnnnn
+EventEntity.A: Sending to Layer 3: [SEQ: 7, ACK: 0, ACK_FLAG: False, CKSUM: 52688, LEN: 10, PAYLOAD: nnnnnnnnnn]
+:	 SEND NEW MESSAGE: oooooooooo
+EventEntity.A: Sending to Layer 3: [SEQ: 8, ACK: 0, ACK_FLAG: False, CKSUM: 51402, LEN: 10, PAYLOAD: oooooooooo]
+EventEntity.A: Starting Timer
+EventEntity.A: Received from Layer 3: [SEQ: 6, ACK: 0, ACK_FLAG: False, CKSUM: 56544, LEN: 10, PAYLOAD: kkkkkkkkkk]
+:	 has received the message: kkkkkkkkkk
+:	 message SEQ#: 6
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 3, ACK_FLAG: True, CKSUM: 65276, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 3
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 7, ACK: 0, ACK_FLAG: False, CKSUM: 55258, LEN: 10, PAYLOAD: llllllllll]
+:	 has received the message: llllllllll
+:	 message SEQ#: 7
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 57830, LEN: 10, PAYLOAD: jjjjjjjjjj]
+:	 has received the message: jjjjjjjjjj
+:	 message SEQ#: 5
+EventEntity.A: Sending to Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 3, ACK_FLAG: True, CKSUM: 65276, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 3
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 3, ACK_FLAG: True, CKSUM: 65276, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 3
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 7
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 7
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Received from Layer 3: [SEQ: 6, ACK: 0, ACK_FLAG: False, CKSUM: 53974, LEN: 10, PAYLOAD: mmmmmmmmmm]
+:	 has received the message: mmmmmmmmmm
+:	 message SEQ#: 6
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 7
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 7
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 6
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Received from Layer 3: [SEQ: 5, ACK: 0, ACK_FLAG: False, CKSUM: 61685, LEN: 10, PAYLOAD: gggggggggg]
+:	 has received the message: gggggggggg
+:	 message SEQ#: 5
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 4, ACK: 0, ACK_FLAG: False, CKSUM: 64256, LEN: 10, PAYLOAD: eeeeeeeeee]
+:	 has received the message: eeeeeeeeee
+:	 message SEQ#: 4
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 3, ACK: 0, ACK_FLAG: False, CKSUM: 7, LEN: 10, PAYLOAD: dddddddddd]
+:	 has received the message: dddddddddd
+:	 message SEQ#: 3
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 5, ACK_FLAG: True, CKSUM: 65274, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 5
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.A: Starting Timer
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 6
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.A: Starting Timer
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 6
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 5, ACK_FLAG: True, CKSUM: 65274, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 5
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 6
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 7
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 7
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Received from Layer 3: [SEQ: 8, ACK: 0, ACK_FLAG: False, CKSUM: 51402, LEN: 10, PAYLOAD: oooooooooo]
+:	 has received the message: oooooooooo
+:	 message SEQ#: 8
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+EventEntity.B: Received from Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 7
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.B: Received from Layer 3: [SEQ: 7, ACK: 0, ACK_FLAG: False, CKSUM: 52688, LEN: 10, PAYLOAD: nnnnnnnnnn]
+:	 has received the message: nnnnnnnnnn
+:	 message SEQ#: 7
+EventEntity.B: Sending to layer 5: nnnnnnnnnn
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 6
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 6
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 6
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 6
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 6, ACK_FLAG: True, CKSUM: 65273, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 6
+:	 ACKNOWLEDGEMENT OUT OF ORDER
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 7, ACK_FLAG: True, CKSUM: 65272, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 7
+:	 ACKNOWLEDGEMENT CORRECT
+EventEntity.A: Starting Timer
+EventEntity.A: Timer Interrupt
+EventEntity.A: Starting Timer
+EventEntity.A: Sending to Layer 3: [SEQ: 8, ACK: 0, ACK_FLAG: False, CKSUM: 51402, LEN: 10, PAYLOAD: oooooooooo]
+EventEntity.B: Received from Layer 3: [SEQ: 8, ACK: 0, ACK_FLAG: False, CKSUM: 51402, LEN: 10, PAYLOAD: oooooooooo]
+:	 has received the message: oooooooooo
+:	 message SEQ#: 8
+EventEntity.B: Sending to layer 5: oooooooooo
+EventEntity.B: Sending to Layer 3: [SEQ: 0, ACK: 8, ACK_FLAG: True, CKSUM: 65271, LEN: 0]
+EventEntity.A: Received from Layer 3: [SEQ: 0, ACK: 8, ACK_FLAG: True, CKSUM: 65271, LEN: 0]
+:	 has received the ACKNOWLEDGEMENT: 8
+:	 ACKNOWLEDGEMENT CORRECT
+Simulator terminated at time 23.87508226386097 after sending 15 msgs from layer5
+
